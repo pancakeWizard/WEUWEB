@@ -1,0 +1,20 @@
+p {
+    color: rgb(255, 129, 129);
+}
+
+div {
+    background-color: rgb(88, 88, 88);
+}
+
+.dog {
+    background-color: cornflowerblue;
+}
+
+#cat {
+    font-size: 24px;
+}
+
+h1.dog{
+    background-color: rgb(123, 199, 123);
+}
+
