@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kladdkaka</title>
+    <!-- skapar lite css för att få bättre utseende -->
+    <style>
+        /* importerar en fin font från googlefonts */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        /* bestämmer vilken font ska användas på hela sidan */
+        body{
+            font-family: 'Josefin Sans';
+        }
+        /* skapar ett vist mellanrum i onumerande listor */
+        ol li {
+            margin-bottom: 15px;
+        }
+    /* skapar ett vist mellanrum i numerande listor */
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- skapar ett block med sidans namn och en liten information samt länk till sida med länkar till föregående sida -->
+    <header>
+        <h1>Hur gör man en kladdkaka</h1>
+        <p>Recept från kommunikationsprojekt</p>
+        <button><a href="index.html">Tilbacka</a></button>
+    </header>
+    <!-- skapar ett block där det ska bilden och ingredienser samt tabell med kalorier vara. För att placera de bredvid varandra använder jag tabell. -->
+<div>
+    <table border="0">
+        <tr>
+            <td>
+                <img src="https://eu-central-1.linodeobjects.com/tasteline/2021/08/kladdkaka-grande-foto-stellan-herner-original-2048x2048.jpg" alt="" width="400px" height="300px"></td>
+            </td>
+            <td>
+                <h3 style="color: cadetblue;">Förbered nästa:</h3>
+                <ul>
+                    <li>100 g Arla Svenskt Smör;</li>
+                    <li>2 dl strösocker;</li>
+                    <li>2 ägg;</li>
+                    <li>Vetemjöl, 1dl;</li>
+                    <li>18g kakao;</li>
+                    <li>3g vaniljsocker;</li>
+                    <li>Florsocker;</li>
+                    <li>En kastrull;</li>
+                    <li>Form med kant, ca 24cm i diameter;</li>
+                    <li>Någon “tagare” som du kan röra väldigt varma kastruller/form med;</li>
+                    <li>Spisen, ugnen, arbetsyta där du kan blanda ingredienser.</li>
+                </ul>
+            </td>
+            <td>
+                <table border="2">
+                    <tr>
+                        <td>Smör</td>
+                        <td>100kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Vaniljsoker</td>
+                        <td>200ckal</td>
+                    </tr>
+                    <tr>
+                        <td>Florsocker</td>
+                        <td>300ckal</td>
+                    </tr>
+                </table>  
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- skapar ett annat block som innehåller form där man markera om man är klar med någon punkt av recept och skriva vad man tänker om recept. -->
+<div>
+    <form>
+        <ol>
+            <li>
+                <input type="checkbox" name="">
+                Sätt ugnen på 175 grader. Medans den värmer upp kommer vi att förbereda det som sedan blir själva kladdkaka
+            </li>
+            <li>
+                <input type="checkbox" name="">
+                Lägg 100 g smör i en kastrull och sätt kastrullen på spisens platta. Glöm inte att sätta på själva spisen så att kastrullen värmer upp och smör smältas. Smör i kastrullen blir flytande när processen är färdigt.
+            </li>
+            <li>
+                <input type="checkbox" name="">
+                Lyft av kastrullen från plattan och lägg den på din arbetsyta. Lägg till socker som du hade förberett.
+            </li>
+            <li >
+                <input type="checkbox" name="">
+                Lägg till också 2 ägg. Glöm inte att ta bort äggskalet. Sedan rör du ner i kastrullen vaniljsocker, kakao och blandar allt detta.
+            </li>
+            <li>
+                <input type="checkbox" name="">
+                Smorda form med smör som du inte har använt. Häll smeten i denna form.
+            </li>
+            <li>
+                <input type="checkbox" name="">
+                Lägg in formen i ugnen och vänta ungefär 15 minuter. Sedan kan du ta ut formen, stäng av ugnen.
+            </li>
+            <li>
+                <input type="checkbox" name="">
+                Låt kakan kallna. Du kan pudra den också med florsocker.
+            </li>
+        </ol>
+        <label for="more">Vill du lägga till någonting?</label>
+        <br>
+        <textarea name="more" id="" cols="30" rows="2" placeholder="Skriv här..."></textarea>
+        <br>
+        
+    </form>
+</div>
+    
+</body>
+</html>
