@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+}
+li {
+    display: inline-block;
+    padding-left: 2%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #6495ed;
+}
