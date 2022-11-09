@@ -42,10 +42,6 @@ a:hover{
     margin-right: 0;
 }
 
-div {
-    background-color: rgb(255, 216, 169);
-}
-
 .rad1{
     width: 33.33%;
     float: left;
@@ -58,4 +54,22 @@ text-align: center;
 .rad2 {
     width: 50%;
     float: left;
+}
+
+.container {
+    position: relative;
+}
+
+.container img {
+    margin-top: 50px;
+
+}
+
+.element {
+    position: absolute;
+    padding: 25px 50px 25px 50px;
+    background-color: rgb(100, 100, 100);
+    color: #fff;
+    bottom: 10px;
+    left: 12%;    
 }
