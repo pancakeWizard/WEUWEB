@@ -55,3 +55,17 @@ a:hover{
     width: 50%;
     float: left;
 }
+
+.container {
+    float: left;
+    position: relative;
+}
+
+.element {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(110, 110, 110);
+    color: #fff;
+    bottom: 20px;
+    left: 200px;
+}
