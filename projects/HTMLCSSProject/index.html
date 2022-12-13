@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
-    <title>Italian food</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css"> 
+    <title>Italian Food</title>
 </head>
 <body>
     <header id="home">
@@ -17,8 +18,8 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a> </li>
-                <li><a href="">Our story</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="#story">Our story</a></li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li class="search"><input type="text" name="search" id="nav_search"> 
                     <img src="img/Search.png" alt="">
                 </li>
@@ -71,7 +72,7 @@
         </a>
     </div>
 
-    <div class="info__container">
+    <div class="info__container" id="story">
         <h2>Lorem ipsum dolor</h2>
         <div class="info__card">
             <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
@@ -121,58 +122,15 @@
             </div>
         </div>
     </div>
-
-    <div class="nextSection__container">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Lorem ipsum dolor sit amet, consecte
-            sectetur adipisicing elit, tation omne 
-            ullamco laboris nisi ut aliqolore.</p>
-        <img src="" alt="" class="nextSection__img">
-    </div>
-
-    <div class="last__container">
-        <div class="last__card">
-            <h4 class="lc__header">Lorem ipsum</h4>
-            <p class="lc__text">Lorem ipsum dolor sit amet, consecte
-                sectetur adipisicing elit, tation omne 
-                ullamco laboris nisi ut aliqolore.</p>
-        </div>
-        <div class="last__card">
-            <h4 class="lc__header">Lorem ipsum</h4>
-            <p class="lc__text">Lorem ipsum dolor sit amet, consecte
-                sectetur adipisicing elit, tation omne 
-                ullamco laboris nisi ut aliqolore.</p>
-        </div>
-        <div class="last__card">
-            <h4 class="lc__header">Lorem ipsum</h4>
-            <p class="lc__text">Lorem ipsum dolor sit amet, consecte
-                sectetur adipisicing elit, tation omne 
-                ullamco laboris nisi ut aliqolore.</p>
-        </div>
-
-        <p class="last__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-        </p>
-        <p class="last__underText">Lorem Ipsum</p>
-    </div>
-
-    <div class="subscribe__container">
-        <h2 class="subscribe__header">Title here</h2>
-        <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-        <form action="">
-            <input type="text" name="" id="" placeholder="Your Email">
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-
+    <br>
     <footer>
         <div class="footer__left">
             <h4 class="fl__header">Title here</h4>
-            <p class="fl__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. </p>
-            <a href="" class="footer__icon"><img src="" alt="" class="footer__icon__img"></a>
-            <a href="" class="footer__icon"><img src="" alt="" class="footer__icon__img"></a>
-            <a href="" class="footer__icon"><img src="" alt="" class="footer__icon__img"></a>
-            <a href="" class="footer__icon"><img src="" alt="" class="footer__icon__img"></a>
+            <p class="fl__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aliquam at dignissim nunc, id maximus ex. Etiam nec <br> dignissim elit, at dignissim enim. </p>
+            <a href="https://www.instagram.com/" class="footer__icon fi_one" target="_blank"><img src="img/Instagram1.png" alt="" class="footer__icon__img"></a>
+            <a href="https://www.facebook.com/" class="footer__icon"><img src="img/Facebook.png" alt="" class="footer__icon__img" target="_blank"></a>
+            <a href="https://www.twitter.com/" class="footer__icon"><img src="img/Twitter.png" alt="" class="footer__icon__img" target="_blank"></a>
+            <a href="https://www.whatsapp.com/" class="footer__icon"><img src="img/WhatsApp.png" alt="" class="footer__icon__img" target="_blank"></a>
         </div>
         <div class="footer__right">
             <div>
@@ -195,7 +153,7 @@
                     <li><a href="">Payment Method</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="other">
                 <h4>Other</h4>
                 <ul>
                     <li><a href="">Contact Us</a></li>

@@ -7,6 +7,27 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
+    font-size: 25px;
+}
+
+header{
+    height: 1056px;
+    position: relative;
+    background: url(../img/main\ background.jpg);
+    background-size: cover; 
+}
+
+nav{
+    margin: 0 0 115px 0;
+    text-align: right;
+}
+
+nav ul li{
+    padding-top: 65px;
+    padding-right: 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;   
 }
 
 h2{
@@ -14,121 +35,57 @@ h2{
     font-weight: 100;
     font-size: 75px;
     text-align: center;
-    margin-bottom: 80px;
-    padding-top: 100px;
+    margin: 0 0 80px 0;
+    padding: 100px 0 0 0;
 }
 
-header{
-    background: url(../img/main\ background.jpg);
-    background-size: cover;
-    height: 1056px;
-    position: relative;
-}
-
-nav{
-    text-align: right;
-    margin-bottom: 115px;
-}
-
-nav ul li{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: px;
-    padding-top: 65px;
-    padding-right: 60px;
-    display: inline-block;
-}
-.search{
-    position: relative;
-}
-
-.search img {
-    position: absolute;
-    left: 143px;
-    top: 75px;
-}
-
-a {
+a{
     color: #fff;
     text-decoration: none;
+    font-size: 15px;
 }
 
-li a:hover {
+a:hover{
     text-decoration: underline;
 }
 
-#nav_search{
-    height: 50px;
-    width: 175px;
-    border-radius: 40px;
-    border-color: rgba(0,0,0,0);
-    padding-left: 10px;
-    border: 0;    
+input {
+    border: none;
+    outline: none;
 }
 
-.container__right {
-    position: absolute;
-    top: 180px;
-    left: 760px;
-}
-
-.container__right img {
-    width: 760px;
-    height: 830px;
-}
-
-.container__left {
-    margin-left: 100px;
-}
-
-.left__italic {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 25px;
-    color: #fff;
-    margin-top: 140px;
-}
 
 h1 {
     font-family: 'Reey';
     font-size: 91px;
     color: #fff;
     margin-top: 20px;
-}
-
-.logo__container img {
-    width: 140px;
-    height: 14  0px;
+    font-weight: normal;
 }
 
 .btn{
+    margin: 65px 0 30px 0;
+    width: 215px;
+    height: 50px;
     background-color: #fff;
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 25px;
-    width: 215px;
-    height: 50px;
     border-radius: 20px;
-    margin-top: 65px;
-    margin-bottom: 30px;
     cursor: pointer;
     border: 0;
+    outline: 0;
 }
 
 .container__left p {
+    width: 450px;
     color: #fff;
     font-size: 20px;
     font-style: italic;
-    width: 450px;
 }
 
 .menu__container{
-    text-align: center;
-}
-
-.menu__container p {
     text-align: center;
 }
 
@@ -187,6 +144,10 @@ h1 {
     text-align: left;
 }
 
+.discounts__container {
+    margin-bottom: 100%;
+}
+
 .discounts__container img{
     width: 610px;
     height: 610px;
@@ -226,6 +187,7 @@ h1 {
 
 .img__container {
     text-align: center;
+    
 }
 
 .disconts__btm{
@@ -243,5 +205,130 @@ h1 {
 
 .nextSection__container p{
     font-size: 29px;
+}
+
+footer{
+    float: none;
+    margin-top: 340px;
+    padding-bottom: 400px;
+}
+
+
+
+h4 {
+    font-style: 31px;
+    font-weight: normal;
+    font-size: 30px;
+    padding-left: 80px;
+}
+
+.footer__left{
+    width: 50%;
+    float: left;
+}
+
+.footer__right{
+    width: 50%;
+    float: left;
+}
+
+.footer__right div{
+    display: inline-block;
+}
+
+footer p {
+    padding-left: 80px;
+}
+
+footer ul {
+    padding-left: 80px;
+    list-style-type: none;
+    
+}
+footer a {
+    color: #000;
+}
+
+.other {
+    position: relative;
+    bottom: 40px;
+}
+
+.footer__icon__img {
+    width: 42px;
+    height: 42px;
+}
+
+.footer__icon {
+    display: inline-block;
+}
+
+.fi_one{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+header h2 {
+    color:#fff;
+}
+
+.contact__description {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact__bc {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.contact {
+    background-color: #27292c;
+    margin-top: -20px;
+    padding-top: 240px;
+    padding-bottom: 230px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact h1 {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 75px;    
+    padding-bottom: 75px;
+}
+
+
+.contact__input {
+    margin-top: 80px;
+    height: 65px;
+    width: 580px;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    padding-left: 20px;
+    outline: none;
+    margin-left: 220px;
+}
+
+::-webkit-input-placeholder{
+    font-size: 25px;
+}
+
+.subscribe__button {
+    width: 220px;
+    height: 65px;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #54524f;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    right: 220px;
 }
 
