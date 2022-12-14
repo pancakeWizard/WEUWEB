@@ -1,30 +1,64 @@
+<!--
+    webbsidan gjord av free psd template:
+    https://www.freepik.com/free-psd/web-template-with-landing-page-traditional-italian-food-restaurant_7888138.htm#query=website%20templates&position=1&from_view=keyword
+ 
+    för style gäller att huvudstruktur som berör t.ex samma element på olika sidor
+    ligger i main.css, redigering på speciella classer och små
+    ändringar ligger i style.css
+ 
+    för att nämna element används det i största delen classer.
+    Om den innehåller flera ord då delas de med hjälp av två
+    understreck (__).
+-->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- anslutning till css filer -->
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/style.css">
+   
+    <!-- anslitning till Google Fonts för att kunna använda olika teckensnitt och import av Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style/style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+   
+    <!-- Webbsidans rubrik -->
     <title>Italian Food</title>
 </head>
+ 
 <body>
+ 
+    <!-- header med meny, en liten form där man kan söka på webbplatsen (själva söket funkar ej), logo, bilden, rubrik samt beskrivning och en knapp -->
     <header id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a> </li>
-                <li><a href="#story">Our story</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li class="search"><input type="text" name="search" id="nav_search"> 
+ 
+        <!-- meny -->
+        <nav class="menu">
+            <!-- delen som ska visas alltid -->
+            <div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="contact.html" target="_blank">Contact us</a></li>
+                    <li class="search"><input type="text" name="search" id="nav_search">
                     <img src="img/Search.png" alt="">
-                </li>
-            </ul>   
+                </li>  
+                </ul>
+            </div>
+            <!-- delen som ska visas när man hoverar över huvudmenyn -->
+            <div class="menu__content">
+                <ul>
+                    <li><a href="#menu">Menu</a> </li>                
+                    <li><a href="#story">Our story</a></li>
+                </ul>
+            </div>    
         </nav>
+ 
+        <!-- allt som ska ligga på vänster sida i header-->
         <div class="container__left">
             <div class="logo__container">
                 <img src="img/logo.png" alt="" class="logo">
@@ -37,84 +71,105 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.
             </p>
         </div>
+ 
+        <!-- allt som ska ligga på höger sida i header-->
         <div class="container__right">
             <img src="img/main img.png" alt="" class="header__img">
         </div>
     </header>
-
-
+ 
+    <!-- nästa block som innehåller rubrik, beskrivning och tre kort med rubrik, bild och text -->
     <div class="menu__container" id="menu">
         <h2>Lorem ipsum dolor</h2>
         <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+       
+        <!-- ett kort (rad 78 - 85, skapar de andra kort genom att kopiera och byta bilder)-->
         <div class="card">
             <img src="img/menu_1.png" alt="" class="card__img">
             <p class="card__header">Lorem ipsum</p>
-            <p class="card__description">Lorem ipsum dolor sit amet, 
+            <p class="card__description">Lorem ipsum dolor sit amet, <br>
                 consectetur  adipisicing...
                 </p>
         </div>
+ 
         <div class="card">
             <img src="img/menu_2.png" alt="" class="card__img">
             <p class="card__header">Lorem ipsum</p>
-            <p class="card__description">Lorem ipsum dolor sit amet, 
+            <p class="card__description">Lorem ipsum dolor sit amet, <br>
                 consectetur  adipisicing...
                 </p>
         </div>
+ 
         <div class="card">
             <img src="img/menu_3.png" alt="" class="card__img">
             <p class="card__header">Lorem ipsum</p>
-            <p class="card__description">Lorem ipsum dolor sit amet, 
+            <p class="card__description">Lorem ipsum dolor sit amet, <br>
                 consectetur  adipisicing...
                 </p>
         </div>
+ 
+        <!-- knappen i sluten av block -->
         <a href="" class="menu__btn__container">
-            <button class="menu__btn btn">Show more</button>
+            <button class="btn__second btn">Show more</button>
         </a>
     </div>
-
+ 
+    <!-- ett till block med info, består av rubrik, två textblock som ligger bredvid varandra och en knapp nere -->
     <div class="info__container" id="story">
         <h2>Lorem ipsum dolor</h2>
+ 
+        <!-- info-kort -->
         <div class="info__card">
             <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur
-                
-                </p>
+               
+            </p>
         </div>
         <div class="info__card">
             <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip.
-                
-                </p>
+               
+            </p>
         </div>
+ 
+        <!-- knappen -->
         <a href="" class="info__btn__container">
             <button class="info__btn btn">More info</button>
         </a>
     </div>
-
+ 
+    <!--
+        Nästa del kan man beskriva som tabell med två kolumner och två rader, realiseras med hjälp av divar och float.
+        Schematiskt ser ut tabellen så här:
+ 
+            |bild | info|
+            |-----|-----|
+            |info | bild|
+    -->
     <div class="discounts__container">
         <div class="discount">
             <div class="left img__container">
                 <img src="img/discount_1.png" alt="">
             </div>
             <div class="right">
-                <p class="discount__header">Discount up to 
+                <p class="discount__header">Discount up to
                     50% <br> All Excursions</p>
                 <p class="discount__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                 <a href="" class="">
-                    <button class="btn">Read more</button>
+                    <button class="btn btn__second">Read more</button>
                 </a>
             </div>
         </div>
-        <div class="discount disconts__btm">
+        <div class="discount discounts__btm">
             <div class="left">
                 <p class="discount__header">January's Promo: <br>Buy 1 Get 1 Free!</p>
                 <p class="discount__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                 <a href="" class="">
-                    <button class="btn">Read more</button>
+                    <button class="btn btn__second">Read more</button>
                 </a>
             </div>
             <div class="right img__container">
@@ -122,17 +177,21 @@
             </div>
         </div>
     </div>
-    <br>
+ 
+<!-- sista delen av sidan med lite information, länkar och sociala medier
+    delas till två divar, den andra delas också i tre delar enligt template
+    så blir det två kolumner, men den andra kolumnen består av tre kolumner-->
+ 
     <footer>
-        <div class="footer__left">
+        <div class="footer">
             <h4 class="fl__header">Title here</h4>
             <p class="fl__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aliquam at dignissim nunc, id maximus ex. Etiam nec <br> dignissim elit, at dignissim enim. </p>
-            <a href="https://www.instagram.com/" class="footer__icon fi_one" target="_blank"><img src="img/Instagram1.png" alt="" class="footer__icon__img"></a>
+            <a href="https://www.instagram.com/" class="footer__icon fi__one" target="_blank"><img src="img/Instagram1.png" alt="" class="footer__icon__img"></a>
             <a href="https://www.facebook.com/" class="footer__icon"><img src="img/Facebook.png" alt="" class="footer__icon__img" target="_blank"></a>
             <a href="https://www.twitter.com/" class="footer__icon"><img src="img/Twitter.png" alt="" class="footer__icon__img" target="_blank"></a>
             <a href="https://www.whatsapp.com/" class="footer__icon"><img src="img/WhatsApp.png" alt="" class="footer__icon__img" target="_blank"></a>
         </div>
-        <div class="footer__right">
+        <div class="footer footer__right">
             <div>
                 <h4>About</h4>
                 <ul>
@@ -165,3 +224,4 @@
     </footer>
 </body>
 </html>
+
