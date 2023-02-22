@@ -71,8 +71,11 @@ function lampController(){
     let sourceZero = "lampaZero.jpg"
     if(myLamp.getAttribute('src') == sourceZero){
         myLamp.src = "lampaOne.jpg"
-    } else{
+    } 
+    else{
         myLamp.src = "lampaZero.jpg"
     }
+
+
 }
 
