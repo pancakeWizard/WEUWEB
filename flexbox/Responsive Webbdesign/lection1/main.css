@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+
+  .rightcolumn .fakeimg {
+    width: 100%;
+  }
+
+  .leftcolumn .fakeimg {
+    width: 100%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 350px;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  #lastList{
+    float: right;
+  }
+  
+
+@media screen and (max-width: 700px){
+    .card{
+        float: none;
+    }
+
+    .fakeimg{
+        width: 100%;
+    }
+
+    .leftcolumn{
+        float: none;
+        width: 100%;
+    }
+
+    .rightcolumn{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+    .leftcolumn{
+        width: 50%;
+    }
+
+    .rightcolumn{
+        width: 50%;
+    }
+}
