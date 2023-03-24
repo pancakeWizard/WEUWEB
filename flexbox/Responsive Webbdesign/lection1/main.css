@@ -55,19 +55,11 @@
     background-color: #f1f1f1;
     padding-left: 20px;
   }
-
-  .rightcolumn .fakeimg {
-    width: 100%;
-  }
-
-  .leftcolumn .fakeimg {
-    width: 100%;
-  }
   
   /* Fake image */
   .fakeimg {
     background-color: #aaa;
-    width: 350px;
+    width: 100%;
     padding: 20px;
   }
   
