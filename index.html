@@ -1,40 +1,154 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PancakeWIzard</title>
     <link rel="stylesheet" href="style/main.css">
+    <title>Tingsburg</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="navLink"><a href="">Menu</a></li>
+            <li class="navLink"><a href="">Book Table</a></li>
+            <li><a href="index.html"><img src="img/Logo.svg" alt="" class="navLogo"></a></li>
+            <li class="navLink"><a href="">About Us</a></li>
+            <li class="navLink"><a href="">Find</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ol>
-                <li><a href="#subject1">Grunderna i HTML</a> </li>
-                <li><a href="#subject2">Grunderna i CSS</a> </li>
-                <li><a href="">Projekt HTML + CSS</a> </li>
-                <li><a href="">Design, JavaScript, Flexbox</a> </li>
-                <li><a href="">Slutprojekt</a> </li>
-            </ol>
-        </nav>
-        <h1>Webbutveckling 1</h1>
+        <h1>Tingsburg</h1>
+        <p>Your favorit burgers</p>
     </header>
-    <div class="projectOne__container">
-        <h2 id="subject1">Grunderna i HTML</h2>
-        <a href="projects/HTML/Lektion 2/tables.html" class="link">Lektion 2. Tabeller</a>
-        <a href="projects/HTML/Lektion 3/media.html" class="link"> Lektion 3. Media</a>
-        <a href="projects/HTML/lektion 4 (tidning)/tidning.html" class="link">Lektion 4. Tidning</a>
-        <a href="projects/HTML/Lektion 5 (Formulär)/form.html" class="link">Lektion 5. Formulär</a>
-        <a href="projects/HTML/Recept/index.html" class="link">Slutprojekt. Recept</a>
+    <div class="menu">
+        <!-- <h2>Take a look at what we have to offer you!</h2> -->
+        <div class="menuCard">
+            <div class="menuCardHeader">
+                <img src="img/menuBurger.png" alt="burger 'Texas Burger'">
+            </div>
+            <div class="price">
+                <p>129 kr</p>
+            </div>
+            <div class="menuCardBody">
+                <h3>Texas meal</h3>
+                <p>120 gram svenskt nötkött, bacon, rödlök, sallad, dubbel ost, BBQ-sås och chipotledressing.</p>
+                <p>Tillkommer: Medium Poppes・Pepsi Max 33cl</p>
+            </div>
+        </div>
+        <div class="menuCard">
+            <div class="menuCardHeader">
+                <img src="img/menuBurger.png" alt="burger 'Texas Burger'">
+            </div>
+            <div class="menuCardBody">
+                <h3>Texas meal</h3>
+                <p>120 gram svenskt nötkött, bacon, rödlök, sallad, dubbel ost, BBQ-sås och chipotledressing.</p>
+                <p>Tillkommer: Medium Poppes・Pepsi Max 33cl</p>
+            </div>
+            <div class="price">
+                <p>129 kr</p>
+            </div>
+        </div>
+        <div class="menuCard">
+            <div class="menuCardHeader">
+                <img src="img/menuBurger.png" alt="burger 'Texas Burger'">
+            </div>
+            <div class="menuCardBody">
+                <h3>Texas meal</h3>
+                <p>120 gram svenskt nötkött, bacon, rödlök, sallad, dubbel ost, BBQ-sås och chipotledressing.</p>
+                <p>Tillkommer: Medium Poppes・Pepsi Max 33cl</p>
+            </div>
+            <div class="price">
+                <p>129 kr</p>
+            </div>
+        </div>
+        <div class="menuCard">
+            <div class="menuCardHeader">
+                <img src="img/menuBurger.png" alt="burger 'Texas Burger'">
+            </div>
+            <div class="menuCardBody">
+                <h3>Texas meal</h3>
+                <p>120 gram svenskt nötkött, bacon, rödlök, sallad, dubbel ost, BBQ-sås och chipotledressing.</p>
+                <p>Tillkommer: Medium Poppes・Pepsi Max 33cl</p>
+            </div>
+            <div class="price">
+                <p>129 kr</p>
+            </div>
+        </div>
+        <div class="menuCard">
+            <div class="menuCardHeader">
+                <img src="img/menuBurger.png" alt="burger 'Texas Burger'">
+            </div>
+            <div class="menuCardBody">
+                <h3>Texas meal</h3>
+                <p>120 gram svenskt nötkött, bacon, rödlök, sallad, dubbel ost, BBQ-sås och chipotledressing.</p>
+                <p>Tillkommer: Medium Poppes・Pepsi Max 33cl</p>
+            </div>
+            <div class="price">
+                <p>129 kr</p>
+            </div>
+        </div>
+        <div class="menuCard">
+            <div class="menuCardHeader">
+                <img src="img/menuBurger.png" alt="burger 'Texas Burger'">
+            </div>
+            <div class="menuCardBody">
+                <h3>Texas meal</h3>
+                <p>120 gram svenskt nötkött, bacon, rödlök, sallad, dubbel ost, BBQ-sås och chipotledressing.</p>
+                <p>Tillkommer: Medium Poppes・Pepsi Max 33cl</p>
+            </div>
+            <div class="price">
+                <p>129 kr</p>
+            </div>
+        </div>
+        <button class="menuBtn"></button>
     </div>
-    <div class="projectTwo__container">
-        <h2 id="subject2">Grunderna i CSS</h2>
-        <a href="projects/CSS/Uppgift 2-1/index.html" class="link">Uppgift 2-1</a>
-        <a href="projects/CSS/Selectors/basic.html" class="link">Selectors</a>
-        <a href="projects/CSS/Box-modell/index.html" class="link">Box-modell</a>
-        <a href="projects/CSS/float/flow.html" class="link">Float och positionering</a>
-        <a href="projects/CSS/anancerad/avancerad.html" class="link">Avancerad CSS</a>
+    <div class="review">
+        <h2></h2>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <img src="" alt="">
+                <p></p>
+                <button class="reviewLike">
+                    <img src="" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="reviewBody">
+                <p></p>
+                <img src="" alt="" class="reviewRate">
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <img src="" alt="">
+                <p></p>
+                <button class="reviewLike">
+                    <img src="" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="reviewBody">
+                <p></p>
+                <img src="" alt="" class="reviewRate">
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <img src="" alt="">
+                <p></p>
+                <button class="reviewLike">
+                    <img src="" alt="">
+                    <p></p>
+                </button>
+            </div>
+            <div class="reviewBody">
+                <p></p>
+                <img src="" alt="" class="reviewRate">
+            </div>
+        </div>
+        <a href="" class="reviewMore"></a>
+        <a href="" class="reviewMore"></a>
     </div>
 </body>
 </html>
