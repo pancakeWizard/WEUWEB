@@ -1,162 +1,255 @@
 @media screen and (max-width: 600px){
 
-.feed{
-    display: flex;
-    flex-direction: column;
+    .feed, .review, .review_box2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .miniMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border-radius: 1rem 1rem 1rem 1rem; */
+        /* overflow: hidden; */
+    }
+
+    .miniBtns{
+        transition: 0.5s;
+        transform-origin: right center;
+        transform: scaleX(0);
+        opacity: 0;
+        background-color: #fff;
+        height: 2rem;
+        line-height: 2rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+        padding-left: 1rem;
+        padding-right: 2.5rem;
+        margin-right: -2rem;
+
+    }
+
+    .miniBtns a{
+        color: #222;
+    }
+
+    .miniBtnsActive{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    li{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+
+    nav a{
+        margin-right: 1rem;
+    }
+    header{
+        height: 80vh;
+    }
+    header h1{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+
+    header p{
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .aboutContainer{
+        margin-top: 55rem;
+    }
+    section{flex-direction: column; gap: 0;}
+    .side{flex-direction: column; gap: 0;}
+
+    #findus{
+        margin-top: 5rem;
+    }
+
+    .findContainer iframe, .findContainer .infoContainer{
+        width: 90%;
+    }
+
+    .infoContainer p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infoContainer p span{
+        padding: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuCard{
+        width: 80%;
+    }
+    .navBtn{
+        margin: 0;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .navBtn span, .navBtn span::before, .navBtn span::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.1rem;
+        margin-left: -0.5rem;
+        width: 1rem;
+        height: 0.2rem;
+        background-color: #222;
+    }
+
+    .navBtn span::before,
+    .navBtn span::after {
+        content: '';
+        display: block;
+        transition: 0.2s;
+    }
+
+    .navBtn span::before{
+        transform: translateY(-0.375rem);
+    }
+    .navBtn span::after{
+        transform: translateY(0.370rem);
+    }
+
+    .navBtnActive span{
+        margin-top: 1px;
+        height: 0;
+    }
+
+    .navBtnActive span:before{
+        transform: rotate(45deg);
+    }
+
+    .navBtnActive span:after{
+        transform: rotate(-45deg);
+    }
 }
 
-.miniMenu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-radius: 1rem 1rem 1rem 1rem; */
-    /* overflow: hidden; */
-}
+@media screen and (max-width: 1200px) and (min-width: 601px){
+    .feed, .review, .review_box2{
+        display: flex;
+        flex-direction: column;
+    }
 
-.miniBtns{
-    transition: 0.5s;
-    transform-origin: right center;
-    transform: scaleX(0);
-    opacity: 0;
-    background-color: #fff;
-    height: 2rem;
-    line-height: 2rem;
-    border-radius: 1rem 1rem 1rem 1rem;
-    padding-left: 1rem;
-    padding-right: 2.5rem;
-    margin-right: -2rem;
+    .miniMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-}
+    .miniBtns{
+        transition: 0.5s;
+        transform-origin: right center;
+        transform: scaleX(0);
+        opacity: 0;
+        background-color: #fff;
+        height: 2rem;
+        line-height: 2rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+        padding-left: 1rem;
+        padding-right: 2.5rem;
+        margin-right: -2rem;
 
-.miniBtns a{
-    color: #222;
-}
+    }
 
-.miniBtnsActive{
-    transform: scaleX(1);
-    opacity: 1;
-}
+    .miniBtns a{
+        color: #222;
+    }
 
-li{
-    display: none;
-}
-nav{
-    display: flex;
-}
+    .miniBtnsActive{
+        transform: scaleX(1);
+        opacity: 1;
+    }
 
-nav a{
-    margin-right: 1rem;
-}
-header{
-    height: 80vh;
-}
-header h1{
-    font-size: 3rem;
-    margin: 1rem 0;
-}
+    li{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
 
-header p{
-    font-size: 1rem;
-}
+    nav a{
+        margin-right: 1rem;
+    }
 
-h2{
-    font-size: 2rem;
-}
+    .navBtn{
+        margin: 0;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+    }
 
-.review{
-    flex-direction: column;
-}
-.aboutContainer{
-    margin-top: 55rem;
-}
-section{flex-direction: column; gap: 0;}
-.side{flex-direction: column; gap: 0;}
+    .navBtn span, .navBtn span::before, .navBtn span::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.1rem;
+        margin-left: -0.5rem;
+        width: 1rem;
+        height: 0.2rem;
+        background-color: #222;
+    }
 
-#findus{
-    margin-top: 5rem;
-}
+    .navBtn span::before,
+    .navBtn span::after {
+        content: '';
+        display: block;
+        transition: 0.2s;
+    }
 
-.findContainer iframe, .findContainer .infoContainer{
-    width: 90%;
-}
+    .navBtn span::before{
+        transform: translateY(-0.375rem);
+    }
+    .navBtn span::after{
+        transform: translateY(0.370rem);
+    }
 
-.infoContainer p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .navBtnActive span{
+        margin-top: 1px;
+        height: 0;
+    }
 
-.infoContainer p span{
-    padding: 0;
-}
+    .navBtnActive span:before{
+        transform: rotate(45deg);
+    }
 
-.menu{
-    flex-direction: column;
-    align-items: center;
-}
+    .navBtnActive span:after{
+        transform: rotate(-45deg);
+    }
 
-.menuCard{
-    width: 80%;
-}
-.navBtn{
-    margin: 0;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    background-color: #fff;
-    border-radius: 50%;
-    position: relative;
-}
-
-.navBtn span, .navBtn span::before, .navBtn span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -0.1rem;
-    margin-left: -0.5rem;
-    width: 1rem;
-    height: 0.2rem;
-    background-color: #222;
-}
-
-.navBtn span::before,
-.navBtn span::after {
-    content: '';
-    display: block;
-    transition: 0.2s;
-}
-
-.navBtn span::before{
-    transform: translateY(-0.375rem);
-}
-.navBtn span::after{
-    transform: translateY(0.370rem);
-}
-
-.navBtnActive span{
-    /* padding-top: 2px; */
-    margin-top: 1px;
-    height: 0;
-}
-
-.navBtnActive span:before{
-    /* padding-top: 3px; */
-    transform: rotate(45deg);
-}
-
-.navBtnActive span:after{
-    /* padding-bottom: 3px; */
-    transform: rotate(-45deg);
-}
-
-.review_box2{
-    display: flex;
-    flex-direction: column;
-}
-
-
+    section{flex-direction: column; gap: 0;}
+    .side{flex-direction: column; gap: 0;}
+    .menu{
+        align-items: center;
+    }
+    .menuCard{
+        width: 40%;
+    }
 
 }
+
 
 .cardHide{
     display: none;
@@ -182,3 +275,5 @@ section{flex-direction: column; gap: 0;}
 }
 
 .timeCardBack{transform: rotateY(360deg); cursor: pointer;}
+
+
