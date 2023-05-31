@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <script src="scripts/responsive.js"></script>
     <title>Tingsburg</title>
 </head>
 <body>
     <nav>
+        <div class="miniMenu">
+            <div class="miniBtns">
+                <a href="#menu">Meny</a>
+                <a href="#timetable">Boka</a>
+                <a href="index.html">Home</a>
+                <a href="#aboutus">Om oss</a>
+                <a href="#findus">Hitta oss</a>
+            </div>
+            <a href="" class="navBtn"><span></span></a>
+        </div>
         <ul>
-            <li class="navLink"><a href="">Meny</a></li>
-            <li class="navLink"><a href="">Boka</a></li>
+            <li class="navLink"><a href="#menu">Meny</a></li>
+            <li class="navLink"><a href="#timetable">Boka</a></li>
             <li><a href="index.html"><img src="img/Logo.svg" alt="" class="navLogo"></a></li>
-            <li class="navLink"><a href="">Om oss</a></li>
-            <li class="navLink"><a href="">Hitta oss</a></li>
+            <li class="navLink"><a href="#aboutus">Om oss</a></li>
+            <li class="navLink"><a href="#findus">Hitta oss</a></li>
         </ul>
     </nav>
     <header>
         <h1>Tingsburg</h1>
         <p>Dina favorita burgers!</p>
     </header>
-    <h2>Det är vad vi kan erbjuda dig</h2>
+    <h2 id="menu">Det är vad vi kan erbjuda dig</h2>
     <div class="menu">
         <div class="menuCard">
             <div class="menuCardHeader">
@@ -395,55 +407,160 @@
                 </table>
             </div>
         </div>
-        <button class="menuBtn"><a href="">Välj mer produkter</a></button>
+        <button class="menuBtn"><a href="landing.html">Välj mer produkter</a></button>
     </div>
-    <h2 class="reviewHead">Titta vad våra <span><img src="img/Group 74.svg" alt=""></span> säger om oss</h2>
-    <div class="review">
-        
+    <h2 class="reviewHead">Titta vad våra <span><img src="img/Group 74.svg" alt=""></span><br> säger om oss</h2>
+    <div class="review" id="review">
         <div class="reviewCard">
             <div class="reviewHeader">
-                <img src="" alt="">
-                <p></p>
+                <img src="img/Rectangle 44.svg" alt="">
+                <p>N. Lastname</p>
                 <button class="reviewLike">
-                    <img src="" alt="">
-                    <p></p>
+                    <img src="img/thumb_up.svg" alt="like">
+                    <p>23</p>
                 </button>
             </div>
             <div class="reviewBody">
-                <p></p>
-                <img src="" alt="" class="reviewRate">
+                <p>This is supposed to be the words of the very honest visitor that probably got a discount to say the restaurant is good and in no way like every other</p>
+                <img src="img/Stars.svg" alt="" class="reviewRate">
             </div>
         </div>
         <div class="reviewCard">
             <div class="reviewHeader">
-                <img src="" alt="">
-                <p></p>
+                <img src="img/Rectangle 44.svg" alt="">
+                <p>N. Lastname</p>
                 <button class="reviewLike">
-                    <img src="" alt="">
-                    <p></p>
+                    <img src="img/thumb_up.svg" alt="like">
+                    <p>23</p>
                 </button>
             </div>
             <div class="reviewBody">
-                <p></p>
-                <img src="" alt="" class="reviewRate">
+                <p>This is supposed to be the words of the very honest visitor that probably got a discount to say the restaurant is good and in no way like every other</p>
+                <img src="img/Stars.svg" alt="" class="reviewRate">
             </div>
         </div>
         <div class="reviewCard">
             <div class="reviewHeader">
-                <img src="" alt="">
-                <p></p>
+                <img src="img/Rectangle 44.svg" alt="">
+                <p>N. Lastname</p>
                 <button class="reviewLike">
-                    <img src="" alt="">
-                    <p></p>
+                    <img src="img/thumb_up.svg" alt="like">
+                    <p>28</p>
                 </button>
             </div>
             <div class="reviewBody">
-                <p></p>
-                <img src="" alt="" class="reviewRate">
+                <p>This is supposed to be the words of the very honest visitor that probably got a discount to say the restaurant is good and in no way like every other</p>
+                <img src="img/Stars.svg" alt="" class="reviewRate">
             </div>
         </div>
-        <a href="" class="reviewMore"></a>
-        <a href="" class="reviewMore"></a>
     </div>
+    <div class="reviewLinks">
+        <a href="review.html" class="reviewMore" target="_blank">Se mer resensioner</a>
+    </div>
+    <h2 class="timeTable" id="timetable">Boka tid för dig och dina vänner!</h2>
+    <div class="bookContainer">
+        <div class="cardContainer">
+            <div class="timeCard">
+                <div class="timeFront">
+                    <h4>Mån 17 april</h4>
+                </div>
+                <div class="timeBack">
+                    <h4>Tider 17 april: </h4>
+                    <p>14:00</p>
+                    <p>16:00</p>
+                    <p>18:00</p>
+                </div>
+            </div>
+            <div class="timeCard">
+                <div class="timeFront">
+                    <h4>Tis 18 april</h4>
+                </div>
+                <div class="timeBack">
+                    <h4>Tider 18 april: </h4>
+                    <p>12:00</p>
+                    <p>13:00</p>
+                    <p>20:00</p>
+                </div>
+            </div>
+            <div class="timeCard">
+                <div class="timeFront">
+                    <h4>Ons 19 april</h4>
+                </div>
+                <div class="timeBack">
+                    <h4>Tider 19 april: </h4>
+                    <p>13:00</p>
+                    <p>15:00</p>
+                </div>
+            </div>
+            <div class="timeCard">
+                <div class="timeFront">
+                    <h4>Tor 20 april</h4>
+                </div>
+                <div class="timeBack">
+                    <h4>Tider 20 april: </h4>
+                    <p>16:00</p>
+                    <p>18:00</p>
+                    <p>20:00</p>
+                </div>
+            </div>
+            <div class="timeCard">
+                <div class="timeFront">
+                    <h4>Fre 21 april</h4>
+                </div>
+                <div class="timeBack">
+                    <h4>Tider 21 april: </h4>
+                    <p>16:00</p>
+                    <p>18:00</p>
+                    <p>20:00</p>
+                </div>
+            </div>
+            
+            <div class="timeMore">
+                <p><a href="">Se mer tider</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="aboutContainer" id="aboutus">
+        <section>
+            <div class="side">
+                <img src="img/mainHeaderBG.png" alt="Bilden på restaurang">
+            </div>
+            <div class="side">
+                <h3>Vår restaurang</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam ipsum modi consectetur eos rerum animi cum adipisci esse earum ducimus sunt numquam voluptate provident, et laudantium impedit non fuga ratione nobis nam odio, accusantium delectus odit. Quas eos optio ab mollitia, beatae et quae, aspernatur libero ducimus eveniet ipsam.</p>
+            </div>
+        </section>
+        <section>
+            <div class="side">
+                <h3>Chef Tingeling</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, similique vero. Non, natus deserunt sit distinctio suscipit aspernatur ab quia iusto in cumque vero, quos ea quasi veniam voluptas maxime excepturi accusamus assumenda magnam delectus reiciendis necessitatibus. Debitis neque nihil quaerat? Maxime exercitationem porro earum alias omnis saepe at tempora!</p>
+            </div>
+            <div class="side">
+                <img src="img/Chef.png" alt="">
+            </div>
+        </section>
+    </div>
+    <h2 id="findus">Här hittar du oss</h2>
+    <div class="findContainer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.080754558373!2d17.943303476693142!3d59.43172770282055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ed196ea03b5%3A0x1904797c502f9077!2sNTI%20Gymnasiet%20Sollentuna!5e0!3m2!1ssv!2sse!4v1685456927440!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="infoContainer">
+            <p><span>Adress: </span> Turebergsvägen 3, 191 47 Sollentuna</p>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="img/logoYellow.svg" alt="">
+            <p>Tingsburg®</p>
+        </div>
+        <div class="icons">
+            <img src="img/icon.svg" alt="sociala medier 1">
+            <img src="img/icon.svg" alt="sociala medier 2">
+            <img src="img/icon.svg" alt="sociala medier 3">
+            <img src="img/icon.svg" alt="sociala medier 4">
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Tingsburg®</p>
+        </div>
+    </footer>
 </body>
 </html>

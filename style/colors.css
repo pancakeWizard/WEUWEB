@@ -1,0 +1,63 @@
+:root {
+    --black: hsl(240 11% 7%);
+    --white: hsl(0 0% 92%);
+    --grey: hsl(219 18% 48%);
+    --shade_grey: hsl(220 2% 24%);
+
+    --yellow_light: hsl(36 59% 87%);
+    --yellow_darker: hsl(37 30% 19%);
+    --yellow_accient: hsl(36 21% 65%);
+
+    --green_light: hsl(164 14% 54%);
+    --green_darker: hsl(166 56% 11%);
+    --green_accient: hsl(165 18% 34%);
+
+    --purple_light: hsl(245 27% 65%);
+    --purple_darker: hsl(237 39% 21%);
+    --purple_accient: hsl(243 20% 45%);
+}
+
+
+.burger {
+    color: var(--yellow_darker);
+    background-color: var(--yellow_light);
+}
+.burgerColor {
+    color: var(--yellow_light);
+}
+.burgerAccient {
+    color: var(--yellow_accient);
+}
+.burgerBorder {
+    border: 1px solid var(--yellow_light);
+}
+
+
+.vegan {
+    color: var(--green_darker);
+    background-color: var(--green_light);
+}
+.veganColor {
+    color: var(--green_light);
+}
+.veganAccient {
+    color: var(--green_accient);
+}
+.veganBorder {
+    border: 1px solid var(--green_light);
+}
+
+
+.drinks {
+    color: var(--purple_darker);
+    background-color: var(--purple_light);
+}
+.drinksColor {
+    color: var(--purple_light);
+}
+.drinksAccient {
+    color: var(--purple_accient);
+}
+.drinksBorder {
+    border: 1px solid var(--purple_light);
+}
